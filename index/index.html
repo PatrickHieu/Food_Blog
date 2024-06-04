@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="asset/logo.jpg" alt="Food Review Blog Logo">
+            <h1>Food Review Blog</h1>
+        </div>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Newsfeed</a></li>
+                    <li><a href="#"><img src="asset/avatar.jpg" alt="avatar"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+       <!-- Login Modal -->
+       <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Signup</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+
+    </footer>
+
+    <script>
+        // Get the modal
+        var loginModal = document.getElementById("login-modal");
+        var signupModal = document.getElementById("signup-modal");
+
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("login-btn");
+        var signupBtn = document.getElementById("signup-btn");
+
+        // Get the <span> element that closes the modal
+        var loginClose = document.getElementsByClassName("close")[0];
+        var signupClose = document.getElementsByClassName("close")[1];
+
+        // When the user clicks the button, open the modal
+        loginBtn.onclick = function() {
+            loginModal.style.display = "block";
+        }
+
+        signupBtn.onclick = function() {
+            signupModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        loginClose.onclick = function() {
+            loginModal.style.display = "none";
+        }
+
+        signupClose.onclick = function() {
+            signupModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == loginModal) {
+                loginModal.style.display = "none";
+            }
+            if (event.target == signupModal) {
+                signupModal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

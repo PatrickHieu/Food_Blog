@@ -1,0 +1,102 @@
+/* login.css */
+
+body {
+    background-image: url('asset/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+header .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+header .image-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .image-container .blog-title {
+    font-size: 24px;
+    color: #ff0000;
+}
+
+.login-container {
+    background-color: rgb(255, 197, 197);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.icon-placeholder img {
+    width: 60px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 40%;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+input[type="email"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.next-btn, .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.next-btn {
+    background-color: #a08fdd;
+    color: black;
+}
+
+.signup-btn {
+    background-color: #c4c4c4;
+    color: black;
+}
+
+/* img {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 15px;
+    max-width: fit-content;
+} */
