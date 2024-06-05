@@ -86,17 +86,16 @@ input[type="email"], input[type="password"] {
 }
 
 .next-btn {
-    background-color: #a08fdd;
+    background-color: rgba(140, 153, 221, 1);
     color: black;
 }
 
 .signup-btn {
-    background-color: #c4c4c4;
+    background-color: rgba(183, 183, 183, 1);
     color: black;
 }
 
-/* img {
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 15px;
-    max-width: fit-content;
+/* .button-container button::after {
+    content: ' →';
+    margin-left: 5px;
 } */
