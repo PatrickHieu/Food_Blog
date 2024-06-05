@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    background-image: url('asset/background.png');
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 15%;
+}
+
+.signup-container {
+    background-color: #efd6d2;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.signup-container label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0 5px 15px;
+}
+
+.signup-container input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    background-color: #62b0e8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.button-container button::after {
+    content: ' →';
+    margin-left: 5px;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
