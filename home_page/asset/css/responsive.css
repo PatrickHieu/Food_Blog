@@ -1,0 +1,26 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .footer-item-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .footer-item-info {
+        text-align: center;
+        margin-top: 20px;
+    }   
+    .footer-owner {
+        flex-direction: column;
+    }
+    .footer-owner .back-home {
+        margin-right: 0;
+    }
+}
