@@ -5,7 +5,6 @@ body {
     height: 100vh;
     background-color: #f0f2f5;
     margin: 0;
-    background-image: url('asset/background.png');
 }
 
 .main-content {
